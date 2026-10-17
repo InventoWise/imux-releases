@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>iMux</title>
+        <item>
+            <title>0.2.0</title>
+            <pubDate>Sat, 17 Oct 2026 00:19:46 -0400</pubDate>
+            <sparkle:version>489</sparkle:version>
+            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[iMux 的第一个正式版本。
+
+- 以 tmux 为准的终端：关掉、重启 iMux，session、pane 和里面跑着的命令都还在。
+- 左栏按项目目录分组的 session，⌘K 跳转，⇧⌘K 快速启动常用命令。
+- 端口面板：看是哪个 pane 占了端口，一键跳过去。
+- Shell 集成：每条命令的成败与耗时，失败的命令在侧栏标出来。
+- 应用内更新：有新版本时在后台下载，退出时安装，终端会话不受影响。
+]]></description>
+            <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.0/iMux-0.2.0.zip" length="12438760" type="application/octet-stream" sparkle:edSignature="DJc9P1aZMR4GxwUzAKhr/rPAraQeOkdvN+NrIi5FHMpqT7c62ulz3LAvi9pPCBhoYkf5VeLoOpNuu9GYrJB4BQ=="/>
+        </item>
+    </channel>
+</rss>
