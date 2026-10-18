@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iMux 下载</title>
+<meta name="description" content="iMux：macOS 上以 tmux 为准的终端。关掉、重启 iMux，会话和里面跑着的命令都还在。">
+<link rel="icon" type="image/png" href="favicon.png">
+<!-- 这一页只放下载入口。appcast.xml 由发版脚本生成，改这个页面不要碰它。 -->
+<style>
+  :root {
+    --bg: #f5f5f7; --card: #ffffff; --fg: #1d1d1f; --fg2: #515154; --fg3: #86868b;
+    --sep: #e3e3e8; --accent: #2f6fed; --accent-fg: #ffffff; --code: #f0f0f3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161618; --card: #1f1f22; --fg: #f2f2f4; --fg2: #b4b4ba; --fg3: #7e7e86;
+      --sep: #2e2e33; --accent: #4a86ff; --accent-fg: #ffffff; --code: #2a2a2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 15px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 72px 20px 48px; }
+  .hero { text-align: center; }
+  .hero img { width: 128px; height: 128px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 18px 0 10px; letter-spacing: -0.01em; }
+  .tagline { color: var(--fg2); font-size: 17px; margin: 0 auto; max-width: 520px; }
+  .download { margin: 32px 0 10px; }
+  .button {
+    display: inline-flex; align-items: center; gap: 10px; padding: 12px 26px;
+    background: var(--accent); color: var(--accent-fg); text-decoration: none;
+    border-radius: 10px; font-size: 16px; font-weight: 600;
+  }
+  .button:hover { filter: brightness(1.06); }
+  .meta { color: var(--fg3); font-size: 13px; margin: 0; }
+  .meta a { color: var(--fg3); }
+  section {
+    background: var(--card); border: 1px solid var(--sep); border-radius: 12px;
+    padding: 22px 24px; margin-top: 28px;
+  }
+  h2 { font-size: 17px; margin: 0 0 12px; }
+  ol, ul { margin: 0; padding-left: 20px; }
+  li + li { margin-top: 6px; }
+  .cmd {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    background: var(--code); border-radius: 8px; padding: 8px 8px 8px 14px; margin: 10px 0 2px;
+    font: 14px/1.4 ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  .cmd button {
+    font: 13px -apple-system, sans-serif; border: 1px solid var(--sep); background: var(--card);
+    color: var(--fg); border-radius: 6px; padding: 4px 10px; cursor: pointer;
+  }
+  .note { color: var(--fg2); font-size: 14px; margin: 10px 0 0; }
+  footer { text-align: center; color: var(--fg3); font-size: 13px; margin-top: 36px; }
+  footer a { color: var(--fg3); }
+  @media (max-width: 480px) { main { padding-top: 48px; } h1 { font-size: 28px; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <img src="icon-256.png" alt="" width="128" height="128">
+    <h1>iMux</h1>
+    <p class="tagline" data-i18n="tagline">macOS 上以 tmux 为准的终端。关掉、重启 iMux，会话、分屏和里面跑着的命令都还在。</p>
+    <p class="download">
+      <a id="dmg" class="button" href="https://github.com/InventoWise/imux-releases/releases/latest" data-i18n="download">下载 iMux</a>
+    </p>
+    <p class="meta"><span id="version"></span><span data-i18n="platform">macOS 14 或更高 · Apple 芯片与 Intel</span></p>
+  </div>
+
+  <section>
+    <h2 data-i18n="installTitle">安装</h2>
+    <ol>
+      <li data-i18n="install1">打开下载的 .dmg，把 iMux 拖进「应用程序」。</li>
+      <li data-i18n="install2">从「应用程序」打开 iMux。之后有新版本时会在后台下载，退出 iMux 时自动装上。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2 data-i18n="tmuxTitle">需要 tmux 3.3 或更高</h2>
+    <p class="note" style="margin-top:0" data-i18n="tmuxWhy">iMux 不自带 tmux，用的是你 Mac 上安装的那一份，所以它和你在终端里用的 tmux 是同一个，会话两边共通。还没装的话，在终端运行：</p>
+    <div class="cmd"><code>brew install tmux</code><button type="button" id="copy" data-i18n="copy">复制</button></div>
+    <p class="note" data-i18n="tmuxNoBrew">没有 Homebrew？先按 <a href="https://brew.sh">brew.sh</a> 上的说明安装。tmux 没装或版本太低时，iMux 也会给出对应的命令。</p>
+  </section>
+
+  <footer>
+    <a href="https://github.com/InventoWise/imux-releases/releases" data-i18n="releases">版本记录与其他下载（zip）</a>
+    · © InventoWise
+  </footer>
+</main>
+
+<script>
+  // 英文浏览器显示英文，其余显示中文（与 app 的两种界面语言一致）。
+  const en = {
+    tagline: "A tmux-first terminal for macOS. Quit or restart iMux and your sessions, splits and running commands are still there.",
+    download: "Download iMux",
+    platform: "macOS 14 or later · Apple silicon and Intel",
+    installTitle: "Install",
+    install1: "Open the downloaded .dmg and drag iMux into Applications.",
+    install2: "Open iMux from Applications. New versions download in the background and install when you quit iMux.",
+    tmuxTitle: "Requires tmux 3.3 or later",
+    tmuxWhy: "iMux doesn't bundle tmux. It uses the one installed on your Mac, so it's the same tmux you use in Terminal and sessions are shared. If you don't have it yet, run:",
+    copy: "Copy", copied: "Copied",
+    tmuxNoBrew: 'No Homebrew? Install it first by following <a href="https://brew.sh">brew.sh</a>. If tmux is missing or too old, iMux shows the right command too.',
+    releases: "Release notes and other downloads (zip)",
+  };
+  const zh = { copied: "已复制" };
+  const lang = (navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en";
+  const t = (key) => (lang === "en" ? en[key] : zh[key]);
+  if (lang === "en") {
+    document.documentElement.lang = "en";
+    document.title = "Download iMux";
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const text = en[el.dataset.i18n];
+      if (text) el.innerHTML = text;
+    });
+  }
+
+  document.getElementById("copy").addEventListener("click", async (event) => {
+    const button = event.currentTarget;
+    const original = button.textContent;
+    try { await navigator.clipboard.writeText("brew install tmux"); } catch (_) { return; }
+    button.textContent = t("copied") || "已复制";
+    setTimeout(() => { button.textContent = original; }, 1500);
+  });
+
+  // 最新版：读同站的 appcast.xml，取 build 号最大的那一条。发新版不用改这个页面。
+  // 读不到时按钮保持指向 Releases 的 latest 页面。
+  fetch("appcast.xml", { cache: "no-store" })
+    .then((response) => response.text())
+    .then((text) => {
+      const doc = new DOMParser().parseFromString(text, "application/xml");
+      const ns = "http://www.andymatuschak.org/xml-namespaces/sparkle";
+      let best = null;
+      for (const item of doc.getElementsByTagName("item")) {
+        const build = Number(item.getElementsByTagNameNS(ns, "version")[0]?.textContent);
+        const version = item.getElementsByTagNameNS(ns, "shortVersionString")[0]?.textContent;
+        if (version && Number.isFinite(build) && (!best || build > best.build)) best = { build, version };
+      }
+      if (!best || !/^\d+\.\d+\.\d+$/.test(best.version)) return;
+      const dmg = document.getElementById("dmg");
+      dmg.href = `https://github.com/InventoWise/imux-releases/releases/download/v${best.version}/iMux-${best.version}.dmg`;
+      dmg.textContent = (lang === "en" ? "Download iMux " : "下载 iMux ") + best.version;
+      document.getElementById("version").textContent = (lang === "en" ? "DMG · " : "DMG · ");
+    })
+    .catch(() => {});
+</script>
+</body>
+</html>
