@@ -36,7 +36,7 @@
 - Shell 集成：每条命令的成败与耗时，失败的命令在侧栏标出来。
 - 应用内更新：有新版本时在后台下载，退出时安装，终端会话不受影响。
 ]]></description>
-            <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.1/iMux-0.2.0.zip" length="12438760" type="application/octet-stream" sparkle:edSignature="DJc9P1aZMR4GxwUzAKhr/rPAraQeOkdvN+NrIi5FHMpqT7c62ulz3LAvi9pPCBhoYkf5VeLoOpNuu9GYrJB4BQ=="/>
+            <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.0/iMux-0.2.0.zip" length="12438760" type="application/octet-stream" sparkle:edSignature="DJc9P1aZMR4GxwUzAKhr/rPAraQeOkdvN+NrIi5FHMpqT7c62ulz3LAvi9pPCBhoYkf5VeLoOpNuu9GYrJB4BQ=="/>
         </item>
     </channel>
 </rss>
