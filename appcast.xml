@@ -3,6 +3,23 @@
     <channel>
         <title>iMux</title>
         <item>
+            <title>0.2.2</title>
+            <pubDate>Sun, 18 Oct 2026 11:05:50 -0400</pubDate>
+            <sparkle:version>528</sparkle:version>
+            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[- 检查 iMux 新版本不再弹窗：检查、下载进度、结果都显示在「设置 → 关于 iMux」的版本行，「安装并重启」也在这一行。应用菜单「检查 iMux 新版本…」会打开这一页。后台发现新版本时，左栏「设置」旁显示「新版本」。
+- tmux 客户端与正在运行的 tmux server 版本不一致时（比如刚升级了 tmux），iMux 会明确提示，并给出两条出路：改用匹配的 tmux，或确认后重启 tmux server。
+- 连接 tmux 失败时约 5 秒内就给出结果，不再等十几秒。
+- 找不到 tmux 时可以一键安装：有 Homebrew 时 iMux 直接安装或升级 tmux，显示进度，装好自动连上；没有 Homebrew 时在「终端」里引导安装。
+]]></description>
+            <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.2/iMux-0.2.2.zip" length="13467587" type="application/octet-stream" sparkle:edSignature="CjVZlomVEvmfLwZVB1uY+BD3au/yTSiLdSfLyTBtj9K+GUDV+oz5i/31DW+XhAE17gwZWVrmSP4wlwtLYtEJAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.2/iMux528-522.delta" sparkle:deltaFrom="522" length="1601822" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="YCtVQ3L/K3njlZ5XduzO/xzcEZ6FUWe6EXyzzvvxf4NvNTnCf460ixGNJF/nmN+DdmAlpLLEBHVpBoyd1qU7Dw=="/>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.2/iMux528-489.delta" sparkle:deltaFrom="489" length="3020890" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NoFMAGikv1p1djVwtGA1OyXmnM2M2Y7l6FKSZEJ5r1vAu/fuLzAdLZ0rJ24+MMRcMkFvSgQNAG6z4n0prZsgDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.1</title>
             <pubDate>Sat, 17 Oct 2026 21:37:17 -0400</pubDate>
             <sparkle:version>522</sparkle:version>
