@@ -3,6 +3,19 @@
     <channel>
         <title>iMux</title>
         <item>
+            <title>0.2.4</title>
+            <pubDate>Thu, 22 Oct 2026 22:55:22 -0400</pubDate>
+            <sparkle:version>567</sparkle:version>
+            <sparkle:shortVersionString>0.2.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[- 升级 tmux 之后可以直接在 iMux 里换上新版本：「设置 → 关于 iMux」的 tmux server 一行在 server 还是旧版本时多了「重启 tmux server…」。点下去先列出会被结束的会话和里面的程序，确认后 iMux 重启 server，再按自动备份把会话、窗口、目录建回来，运行手册里记着的、之前在跑的命令也一起重新启动。
+]]></description>
+            <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.4/iMux-0.2.4.zip" length="13978572" type="application/octet-stream" sparkle:edSignature="dqhUn7AL5WbaBJFO3tTADl8ibfsgQwhXl/DcyCzWAx2GgJDnKX+JM0bWoNIoXbm5ZEY8Nm26dau8vIaEgRqQCw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.4/iMux567-563.delta" sparkle:deltaFrom="563" length="786606" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wB5OZc83MkUwbRnhYB6a4F2+NrSFypSzAOQTpdOz8nClurn+X6VuzwlZ4YBiUISVlFxQydEZXiue1nIOVtnbCw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.3</title>
             <pubDate>Thu, 22 Oct 2026 21:43:12 -0400</pubDate>
             <sparkle:version>563</sparkle:version>
@@ -38,26 +51,6 @@
             <sparkle:deltas>
                 <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.2/iMux528-522.delta" sparkle:deltaFrom="522" length="1601822" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="YCtVQ3L/K3njlZ5XduzO/xzcEZ6FUWe6EXyzzvvxf4NvNTnCf460ixGNJF/nmN+DdmAlpLLEBHVpBoyd1qU7Dw=="/>
                 <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.2/iMux528-489.delta" sparkle:deltaFrom="489" length="3020890" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NoFMAGikv1p1djVwtGA1OyXmnM2M2Y7l6FKSZEJ5r1vAu/fuLzAdLZ0rJ24+MMRcMkFvSgQNAG6z4n0prZsgDw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.2.1</title>
-            <pubDate>Sat, 17 Oct 2026 21:37:17 -0400</pubDate>
-            <sparkle:version>522</sparkle:version>
-            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[- 界面支持简体中文与英文，在「设置 → 通用」里切换。
-- 终端里拖选、双击、三击松手即复制，鼠标处显示「已复制」。
-- 端口视图重做：左栏「端口」打开，列出本机所有 TCP 监听，点一行展开详情；目录可在访达中打开。
-- 命令面板改名 Runbook，按目标组和目录分组。
-- 块标题栏的 × 改为「终止会话」，和左栏右键用同一个确认框。
-- 重启 / 项目启动面板改版：逐行选择「忽略」或「启动」。
-- 找不到 tmux 或版本太低时，按你的机器给出可复制的安装 / 升级命令，装好后点「重新检测」，不用重启 iMux。
-- 命令记事本不再收录 rm、mv、kill 等破坏性命令。
-]]></description>
-            <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.1/iMux-0.2.1.zip" length="13224697" type="application/octet-stream" sparkle:edSignature="wooa7YY3/rhHtTe2IIkxQiwD4XXp5sNJ3Jq2cBKiA+6Ige5jE/qxZbW1wgW+3wIKv1gunU6qZvK6BdPIu+x2CQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.1/iMux522-489.delta" sparkle:deltaFrom="489" length="2796550" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Y+tCHQDyEf9AeZBm/PsH2dUaDsND9EQY5bRXXfBFdgezC6VF2jmA18TcDS2mKuY5HTYVxw4Rsrxj8rw14bRPDg=="/>
             </sparkle:deltas>
         </item>
     </channel>
