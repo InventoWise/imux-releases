@@ -3,6 +3,20 @@
     <channel>
         <title>iMux</title>
         <item>
+            <title>0.2.5</title>
+            <pubDate>Fri, 23 Oct 2026 09:08:22 -0400</pubDate>
+            <sparkle:version>569</sparkle:version>
+            <sparkle:shortVersionString>0.2.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[- 「设置 → 关于 iMux」的 tmux server 一行更清楚：socket 挪到说明下面单独一行，并写明在终端里怎样连到同一个 server；右边只留「重启 tmux server…」按钮。
+]]></description>
+            <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.5/iMux-0.2.5.zip" length="13977680" type="application/octet-stream" sparkle:edSignature="bnuvV9WTcRpu86wplStAPDX9vrSfbK9v41in6skZbR5ws+l3xkxU+iB/IxzCIbfkLn2Or57QS1brush7EpC8DA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.5/iMux569-567.delta" sparkle:deltaFrom="567" length="675190" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="dE476TqwposEOATbP3eGxvFVTm5B+O8pNdNOsAT1dYyAMykXqcNIytHr74rlbQEArhy6gfTKosajmI9+5LSTCQ=="/>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.5/iMux569-563.delta" sparkle:deltaFrom="563" length="829338" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ZiyC0Tk3j6Uh3O+stvJQgv27JYGwlls6S2EWGMJamBjfyBoZKCr/3+K6RO+gmMn3xa7lEZX0gALvRTLfZmp0BQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.4</title>
             <pubDate>Thu, 22 Oct 2026 22:55:22 -0400</pubDate>
             <sparkle:version>567</sparkle:version>
@@ -35,23 +49,6 @@
 - 「关于 iMux」的版本号挪到标题同一行，更新状态的图标跟在它说明的那句话前面，右边只留按钮。
 ]]></description>
             <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.3/iMux-0.2.3.zip" length="13972214" type="application/octet-stream" sparkle:edSignature="3Uhicnd8K62sQm3LbHUhV477rw3aBpchCTtuzbQddyg5Fbze+i+K7jU6nuu4dcuiSQai0q3E91hdUhh8hWUfCg=="/>
-        </item>
-        <item>
-            <title>0.2.2</title>
-            <pubDate>Sun, 18 Oct 2026 11:05:50 -0400</pubDate>
-            <sparkle:version>528</sparkle:version>
-            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[- 检查 iMux 新版本不再弹窗：检查、下载进度、结果都显示在「设置 → 关于 iMux」的版本行，「安装并重启」也在这一行。应用菜单「检查 iMux 新版本…」会打开这一页。后台发现新版本时，左栏「设置」旁显示「新版本」。
-- tmux 客户端与正在运行的 tmux server 版本不一致时（比如刚升级了 tmux），iMux 会明确提示，并给出两条出路：改用匹配的 tmux，或确认后重启 tmux server。
-- 连接 tmux 失败时约 5 秒内就给出结果，不再等十几秒。
-- 找不到 tmux 时可以一键安装：有 Homebrew 时 iMux 直接安装或升级 tmux，显示进度，装好自动连上；没有 Homebrew 时在「终端」里引导安装。
-]]></description>
-            <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.2/iMux-0.2.2.zip" length="13467587" type="application/octet-stream" sparkle:edSignature="CjVZlomVEvmfLwZVB1uY+BD3au/yTSiLdSfLyTBtj9K+GUDV+oz5i/31DW+XhAE17gwZWVrmSP4wlwtLYtEJAA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.2/iMux528-522.delta" sparkle:deltaFrom="522" length="1601822" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="YCtVQ3L/K3njlZ5XduzO/xzcEZ6FUWe6EXyzzvvxf4NvNTnCf460ixGNJF/nmN+DdmAlpLLEBHVpBoyd1qU7Dw=="/>
-                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.2/iMux528-489.delta" sparkle:deltaFrom="489" length="3020890" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NoFMAGikv1p1djVwtGA1OyXmnM2M2Y7l6FKSZEJ5r1vAu/fuLzAdLZ0rJ24+MMRcMkFvSgQNAG6z4n0prZsgDw=="/>
-            </sparkle:deltas>
         </item>
     </channel>
 </rss>
