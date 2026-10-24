@@ -3,6 +3,22 @@
     <channel>
         <title>iMux</title>
         <item>
+            <title>0.2.6</title>
+            <pubDate>Sat, 24 Oct 2026 10:36:25 -0400</pubDate>
+            <sparkle:version>571</sparkle:version>
+            <sparkle:shortVersionString>0.2.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[- 恢复面板一眼看懂要恢复的是什么：每行先写命令的名字（与运行手册同一套，起过名字的用你的名字，否则从命令推出来，例如 `/Applications/Xcode.app/…/git diff AGENTS.md` 写成 `git diff AGENTS.md`），下面是完整命令（最多两行），再下面是目录。命令和目录点一下就复制。
+- 目录太长时只省略中间：开头的 `~/Projects` 和最后一级文件夹始终完整。运行手册详情里的目录也一样。
+]]></description>
+            <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.6/iMux-0.2.6.zip" length="13994723" type="application/octet-stream" sparkle:edSignature="UaS7dEKTwHqZ/qKI5Z00oAG6DzuvWGu6f6HJ98PRxNp7pYhQxcanbp4p00bVcgcJZ4TwPH7NJdS+AJGd5P2KBw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.6/iMux571-569.delta" sparkle:deltaFrom="569" length="1095594" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="/AcE5KRprnZEQy236Exil3lylICI1hl/AEJUaEwTF3GBlhO7saJ/iMRQz9SbVYPXNU5qi4x6mQbPzuYqaVlOAg=="/>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.6/iMux571-567.delta" sparkle:deltaFrom="567" length="1166622" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="bUnXFPPkWIOv/87Irp9ofBVdVgNSCb+D2P7GO+6UQXY2ezk3ACphqkfaoxDHg/Vs/yXmjWkSxyVs9jyTmirGCQ=="/>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.6/iMux571-563.delta" sparkle:deltaFrom="563" length="1200510" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="YIigVRGWXIY3RYAZf6GOKbbx+Tagq9w/WAxhOI81Yb2F72enZNvFuUrnjRlQpqKnlicVa8sl/mq6EaQkxp28CA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.5</title>
             <pubDate>Fri, 23 Oct 2026 09:08:22 -0400</pubDate>
             <sparkle:version>569</sparkle:version>
@@ -28,27 +44,6 @@
             <sparkle:deltas>
                 <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.4/iMux567-563.delta" sparkle:deltaFrom="563" length="786606" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wB5OZc83MkUwbRnhYB6a4F2+NrSFypSzAOQTpdOz8nClurn+X6VuzwlZ4YBiUISVlFxQydEZXiue1nIOVtnbCw=="/>
             </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.2.3</title>
-            <pubDate>Thu, 22 Oct 2026 21:43:12 -0400</pubDate>
-            <sparkle:version>563</sparkle:version>
-            <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[- 运行手册搬进主窗口：左栏「端口」下面多了「运行手册」（⇧⌘R），打开后和端口视图一样占满右边。左栏不再分「会话 / 运行手册」两个 tab，会话列表一直都在。
-- 运行手册按用途分成「分组 · 常用 · 全部」：默认的「常用」只放固定的、跑过不止一次的、正在运行的；一起启动的几条放进「分组」，一键全部启动；搜索永远搜全部。（原来的「项目」改叫「分组」。）
-- 每条命令都有一个看得懂的名字：没起过名字的按命令自动生成，ssh 写主机与远程命令，脚本写文件名，带端口的写上 `:端口`。状态、目录、最近一次、运行次数排成列，点列头可以排序。
-- 点一行展开详情：命令和目录点一下就复制，目录旁边可以复制 `cd` 命令、在 Finder 中显示；双击或回车直接运行，已经在跑的就切过去。
-- 编辑命令时名称排在第一行，填好当前显示的名字；新增多行备注，写下用途和注意事项，展开详情第一行就能看到，也能被搜到。
-- tmux server 没了也不用从头摆：iMux 会持续记下每个 session 的 window 结构与目录（自动备份）。server 重启或意外退出之后，连接断开时自动重连一次，没有 session 时按备份把结构建回来（只开 shell，命令由重启卡片单独确认）。在「版本不一致」页确认重启 server 的那条路，会连命令一起恢复。
-- 「已断开」页也有「从自动备份恢复」：先重连，再按此刻的 session 情况规划要补哪些，已经在的不动。有可以恢复的 session 时，运行手册顶部也会提示一句，点「查看并恢复…」。
-- 恢复与启动不会把同一个命令跑两份：已经在运行的条目不再被重复启动，同名的空闲窗口会被复用。
-- 自动备份按 window 保留未恢复的部分，所以只恢复了一半、或者 window 重名时，剩下的那些仍然留在备份里。
-- 「设置 → 关于 iMux」会检查你的 tmux 有没有新版本。有的话一键升级——在一个看得见的会话里跑 `brew upgrade tmux`，过程看得到，成功后自动回到原来的位置。
-- 修复：`/tmp` 这类软链目录不再被误标「起始目录外」。macOS 上 `/tmp` 实际指向 `/private/tmp`，以前两边对不上就会一直亮着那个标记。
-- 「关于 iMux」的版本号挪到标题同一行，更新状态的图标跟在它说明的那句话前面，右边只留按钮。
-]]></description>
-            <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.3/iMux-0.2.3.zip" length="13972214" type="application/octet-stream" sparkle:edSignature="3Uhicnd8K62sQm3LbHUhV477rw3aBpchCTtuzbQddyg5Fbze+i+K7jU6nuu4dcuiSQai0q3E91hdUhh8hWUfCg=="/>
         </item>
     </channel>
 </rss>
