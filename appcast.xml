@@ -3,6 +3,27 @@
     <channel>
         <title>iMux</title>
         <item>
+            <title>0.2.10</title>
+            <pubDate>Mon, 26 Oct 2026 16:47:34 -0400</pubDate>
+            <sparkle:version>598</sparkle:version>
+            <sparkle:shortVersionString>0.2.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[- 终端搜索：块标题栏左侧加了搜索框（⌘F），打字就把屏幕上所有匹配标成黄底，当前那一处是橙底；↩ 下一处、⇧↩ 上一处，不在屏幕上的会滚过去；Esc 清空。
+- 终端区右键菜单：当前目录的 ls、这个会话的「命令历史」（选一条填进命令行）、拷贝 / 粘贴 / 复制路径、在 Finder 中显示。端口列表、运行手册、文件浏览器的右键菜单也按类别分组，每项带图标。
+- Finder 右键「在 iMux 中打开」：右键文件夹或文件，在那个目录新开一个会话（会先问你一次，按回车确认）。**第一次要在「系统设置 → 通用 → 登录项与扩展」里打开 iMux 的 Finder 扩展**，菜单才会出现。
+- 文件浏览器：右上角可以搜索当前目录（连隐藏文件一起搜）；右下角的眼睛开关显示 / 隐藏隐藏文件（⇧⌘.）；路径后面的 →| 一点就在终端里 cd 过去。双击和右键里的命令会先清掉命令行上已经输入的内容再执行。
+- 终端顶部固定的命令栏贴齐上边和右边，不再露出一条缝。
+]]></description>
+            <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.10/iMux-0.2.10.zip" length="16255169" type="application/octet-stream" sparkle:edSignature="y7e92CpC18vny8MeskbW3gcw1R3hiaSuOWPkN+MQeUVkm0nfKEAN7pOv9Qodt19OX17TZGigedwguN+vXI3MBQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.10/iMux598-589.delta" sparkle:deltaFrom="589" length="1847718" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="eQPgUVGL6HAD44HlNhjvAyeAFcw4Aj2eFea1Kv8kMgMHpSfL/xO5AMVtlDWsagLjzPZDwbs8sEyXT7xI+YsDCQ=="/>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.10/iMux598-586.delta" sparkle:deltaFrom="586" length="1914742" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="7kEMdqtWaRjO+TMmeACeQ0ZmfOudXe4lF/aHd2hWnYur5xOrCyrN9q5zfdfr42SitFQzZLChx3d2oHYwNergDw=="/>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.10/iMux598-576.delta" sparkle:deltaFrom="576" length="2171190" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="DXnD0Cdqojeaa10G9fBymu4nQI800SOcX4aP43XwiMi2kqSrYQ7YZ4JJaxil2JVwF9Rkz0+e7JAkwUKfweJwCA=="/>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.10/iMux598-571.delta" sparkle:deltaFrom="571" length="2291150" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1QfGTWwTBQwdynfKqK44l3gHzN0o4e8R/CU5WEazlav3ynLCtKrSuXF44mfKkWYqsiXkLUeu6ge38Tjt46gKBQ=="/>
+                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.10/iMux598-569.delta" sparkle:deltaFrom="569" length="2362730" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Ry4cKicQcYxKFsOCNlbA57GZ1k41OpA3A8jqK7CkP/O1HpR+AkSdFDx1L55cjxVbiaeJ/7LO6oR2doUWSmVIAQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.9</title>
             <pubDate>Mon, 26 Oct 2026 14:42:48 -0400</pubDate>
             <sparkle:version>589</sparkle:version>
@@ -40,25 +61,6 @@
                 <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.8/iMux586-569.delta" sparkle:deltaFrom="569" length="1948918" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="QG/V8tjvg2pjJoXndOojZGnjzyQicgFrX25DxUFL1iFtoNxdfDmjSVm+ECdvXikVQ+lRIGFXVfVcZz1XI9GkAQ=="/>
                 <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.8/iMux586-567.delta" sparkle:deltaFrom="567" length="1923286" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="2awFydYjFgpkeZSIUVUPi6N2Rh4sflsXQ1rX4u8MBkGiaWEBaAvyKbsmMamtpznB0AYNCPgGzXn+X78+iVdRBg=="/>
                 <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.8/iMux586-563.delta" sparkle:deltaFrom="563" length="1951086" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="2TV0rDE1Mg4cVAUzTylNcI7EBaALEFoxwwZ308gYJDaX+uxceOpVrNcVl0LiN94+SzpZwRieI7JTWmCEapiHCA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.2.7</title>
-            <pubDate>Sat, 24 Oct 2026 18:28:56 -0400</pubDate>
-            <sparkle:version>576</sparkle:version>
-            <sparkle:shortVersionString>0.2.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[- 每个会话有自己的命令历史：会话被关掉、或 tmux server 重启后按原名恢复，在里面按 ↑ 先出来的就是这个会话以前敲过的命令，翻完才是全局历史。需要更新 shell 钩子（iMux 启动时会提示「立即更新」，已开的 shell 自动换上），从更新之后开始记录。
-- 标题栏「行数」左边新增 ⌄：列出这个会话最近 50 条命令，可以搜索；回车填进命令行，⌘↩ 填入并运行，右键复制。前台在跑别的程序时只复制，不会把命令敲进那个程序。
-- 命令一执行就记下（zsh），server 被杀、iMux 崩溃也不丢；你的全局 zsh / bash 历史设置不受影响。
-- 修复：控制模式输出里恰好有一行形如 `%end …` 的内容时，不再提前结束应答块导致后续命令错位。
-]]></description>
-            <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.7/iMux-0.2.7.zip" length="14144954" type="application/octet-stream" sparkle:edSignature="W1eN+kZE/nqCDopmlMo9xggmvkvpsDsZrmZ0sasaD9aDEGWTCZcGGsO+Fb7Ta2rN7HnhIHKqOfSvaWnyDYJYDQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.7/iMux576-571.delta" sparkle:deltaFrom="571" length="1406886" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="z4A6ag8kQPZTp1VoiieIOqlyQ80twt+ZveS06uERzswCcC/LgqeTVogaRHwqfEv5IGIoSLTGqUwSD8e918WyCA=="/>
-                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.7/iMux576-569.delta" sparkle:deltaFrom="569" length="1611566" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="A/8AwK2f457q09T8qmgyzvmEzNHGb3NGXLcImy3dGVSNgakACO6RieiwzDHbgqe/L9x3WsavcauQUnPapDDlDQ=="/>
-                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.7/iMux576-567.delta" sparkle:deltaFrom="567" length="1685466" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="TdH3pWE7yLqBfl25wvuGoJV+ujOm1+AJmpXHjqbHbBXzeKFhgJ9sDl8Z0zWmV1FBJBpFru9aBwizYSFRU/B6AQ=="/>
-                <enclosure url="https://github.com/InventoWise/imux-releases/releases/download/v0.2.7/iMux576-563.delta" sparkle:deltaFrom="563" length="1687418" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="D+iap4zu3GHG+2d5oDwU0v2ado8B3OQ9dLL+NCraf6n4OaPFtC4vBtu+rKwy3NF8sQ/AEgVbSuBMi/cs60snDg=="/>
             </sparkle:deltas>
         </item>
     </channel>
